@@ -1,4 +1,4 @@
-package nl.paulzijlmans;
+package nl.paulzijlmans.jee;
 
 public class LoginService {
 

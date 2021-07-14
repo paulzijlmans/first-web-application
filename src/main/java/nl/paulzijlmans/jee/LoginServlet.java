@@ -1,4 +1,4 @@
-package nl.paulzijlmans;
+package nl.paulzijlmans.jee;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
