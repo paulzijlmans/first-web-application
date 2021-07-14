@@ -10,7 +10,7 @@ import java.io.IOException;
 @WebServlet(urlPatterns = "/login.do")
 public class LoginServlet extends HttpServlet {
 
-    private final UserValidationService service = new UserValidationService();
+    private final LoginService service = new LoginService();
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
@@ -26,7 +26,7 @@ public class LoginServlet extends HttpServlet {
             request.setAttribute("password", password);
             request.getRequestDispatcher("/WEB-INF/views/welcome.jsp").forward(request, response);
         } else {
-            request.setAttribute("errorMessage", "Invalid Credentials!");
+            request.setAttribute("errorMessage", "Invalid Credentials!!");
             request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(request, response);
         }
     }
